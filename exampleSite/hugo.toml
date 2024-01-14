@@ -1,7 +1,9 @@
 baseurl = "https://blist.vercel.app"
 metaDataFormat = "yaml"
 title = "Blist Multilingual Theme"
-theme = "blist"
+#theme = "blist"
+# Use theme as hugo module
+theme = "github.com/apvarun/blist-hugo-theme"
 
 DefaultContentLanguage = "en"
 DefaultContentLanguageInSubdir = true
@@ -240,3 +242,7 @@ DefaultContentLanguageInSubdir = true
   [markup.goldmark.renderer]
     # Enable to include inline HTML
     unsafe = true
+
+[module]
+  # Uncomment the next line to build and serve using local blist clone declared in the named Hugo workspace:
+  # workspace = "blist.work"
